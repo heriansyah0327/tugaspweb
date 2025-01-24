@@ -1,4 +1,4 @@
-# T=ugas Kelompok Pemrograman Web
+# Tugas Kelompok Pemrograman Web
 
 Dokumentasi Tugas Kelompok
 
