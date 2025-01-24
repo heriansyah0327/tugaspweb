@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Menghapus margin default dari body dan menetapkan font secara global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Admina, sans-serif;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Header Styles */
+.header {
+  display: flex; /* Menjadikan elemen anak di dalamnya fleksibel (berbaris) */
+  align-items: center;
+  background-color: #8e7174; /* Warna coklat tua */
+  padding: 10px 10px; /* Ruang dalam di atas/bawah 10px dan kiri/kanan 20px */
+  color: white; /* Warna teks putih */
+}
+
+/* Styling untuk logo di dalam header */
+header .logo {
+  margin-right: auto;
+  display: flex; /* Menjadikan elemen anak di dalamnya fleksibel (berbaris) */
+  align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+  font-weight: bold; /* Membuat teks logo tebal */
+  color: white;
+}
+
+.logo h1 {
+  font-size: 28px; /* Ukuran font besar untuk teks logo */
+}
+
+/* Styling untuk elemen gambar logo */
+.logo-img {
+  width: 10%;
+  height: auto;
+  margin-right: 10px; /* Memberikan jarak antara logo gambar dan teks */
+}
+
+/* Styling untuk tombol dashboard di kanan header */
+.dashboard-button {
+  background-color: transparent;
+  border: none; /* Menghapus border */
+  color: #ffffff;
+  font-size: 1.2rem; /* Ukuran font tombol */
+  cursor: pointer; /* Mengubah kursor menjadi tangan saat diarahkan */
+  padding: 5px 10px; /* Ruang dalam di dalam tombol */
+  border-radius: 4px; /* Membulatkan sudut tombol */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Efek transisi halus untuk warna */
+  margin-right: 10px;
+}
+
+.dashboard-button-clr {
+  background-color: #f0e4cb;
+  color: #826b6d;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+/* Styling untuk navbar di bawah header */
+.navbar {
+  width: 100%;
+  background-color: #f0e4cb; /* Warna beige */
+  padding: 10px 20px; /* Ruang dalam di atas/bawah 10px dan kiri/kanan 20px */
+  font-size: 1.2rem; /* Ukuran font teks navbar */
+  color: black; /* Warna teks hitam */
+  border-top: 2px solid #866564; /* Garis pemisah dengan warna coklat tua */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Efek drop shadow */
+}
+
+.hover-me:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.back-button span {
+  color: #000;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #000;
+  margin-top: 20px;
+}
+
+main a {
+  text-decoration: none;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Form Styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 15px 45px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4a3434;
+}
+
+button {
+  background-color: #8e7174;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4a3434;
+}
+
+.register-text {
+  text-align: center;
+  color: #666;
+}
+
+.register-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+#open-sidebar {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+#close-sidebar {
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
