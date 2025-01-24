@@ -1,6 +1,6 @@
-# goobnote
+# T=ugas Kelompok Pemrograman Web
 
-tugas pemrograman web
+Dokumentasi Tugas Kelompok
 
 ```
 1. Buat database dengan nama goobnote (Kalau mau beda namanya jangan lupa ubah di file lib/connection.php).
